@@ -56,3 +56,14 @@
     padding-top: 15px;
     padding: 10px;
 }
+li a:not(.active):hover{
+  color: yellow !important;
+  background-color: orange !important;
+}
+p a{
+  color: white !important;
+  padding: 10px;
+}
+p a:hover{
+  color: blue !important;
+}
