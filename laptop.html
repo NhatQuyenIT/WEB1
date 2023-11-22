@@ -64,10 +64,11 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link active bg-success" href="#"><i class="fa fa-home" aria-hidden="true" style="font-size: larger;"></i> Home</a>
+          <a class="nav-link" href="./index.html"><i class="fa fa-home" aria-hidden="true"
+              style="font-size: larger;"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./laptop.html"><i class="fa fa-laptop" aria-hidden="true"></i> Laptop</a>
+          <a class="nav-link active bg-success" href="#"><i class="fa fa-laptop" aria-hidden="true"></i> Laptop</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa fa-mobile" aria-hidden="true"></i> Điện thoại di động</a>
@@ -89,7 +90,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Flash Sales </a>
+          <a class="nav-link" href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Flash Sales</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -107,50 +108,203 @@
       </form>
     </div>
   </nav>
-  <!-- Banner -->
-  <div id="carouselId" class="carousel slide text-center" data-ride="carousel">
-    <!-- <ol class="carousel-indicators">
-    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselId" data-slide-to="1"></li>
-    <li data-target="#carouselId" data-slide-to="2"></li>
-    <li data-target="#carouselId" data-slide-to="3"></li>
-    <li data-target="#carouselId" data-slide-to="4"></li>
-  </ol> -->
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <img src="./img/slider_1.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/slider_4.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/slider_5.png" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/slider_6.png" alt="Fourth slide">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/slider_7.png" alt="Fifth slide">
-      </div>
-    </div>
-    <!-- <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
-  </div>
   <!-- Content -->
+  <!-- Danh sách menu cột -->
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-12 col-xl-12 ">
-        <h3 class="text-white bg-primary mt-2 p-2 text-uppercase">các sản phẩm đã xem gần đây nhất</h3>
+      <div class="col-12 col-md-3 col-xl-3">
+        <div class="list-group border-primary mt-2">
+          <a href="#"
+            class="list-group-item list-group-item-action disabled text-uppercase text-center text-white my-font p-1 bg-primary">
+            <span style="font-weight: 600;">tất cả hãng</span></a>
+          <a href="#" class="list-group-item list-group-item-action active my-font p-1">MSI</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Gigabyte</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Acer</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Asus</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">HP</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Dell</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Lenovo</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Apple (MacBook)</a>
+          <a href="#" class="list-group-item list-group-item-action my-font p-1">Microsoft (Surface)</a>
+        </div>
+        <h3 class="text-white bg-primary mt-2 p-2 text-uppercase text-center">sản phẩm <span
+            class="text-warning">hot</span></h3>
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Phụ kiện/Tai nghe/headphone-gaming-RGB.jpeg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- Danh sách sản phẩm -->
+      <div class="col-12 col-md-9 col-xl-9 ">
+        <h3 class="text-white bg-primary mt-2 p-2 text-uppercase">các sản phẩm laptop msi</h3>
         <div class="row">
-          <div class="col-12 col-md-6 col-xl-3 ">
+          <div class="col-12 col-md-6 col-xl-4 ">
             <div class="card border-primary">
-              <img class="card-img-top" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638137864184249502_msi-gaming-gf63-thin-11uc-den-dd.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Gaming GF63</h4>
+                <p class="card-text text-danger h3">Giá: 18.890.000 <sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638233934013700114_msi-gaming-cyborg-15-a12-den-dd-icon.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Gaming Cyborg 15</h4>
+                <p class="card-text text-danger h3">Giá: 25.690.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638233926006928754_msi-modern-15-b13m-den-dd-office.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Modern 14</h4>
+                <p class="card-text text-danger h3">Giá: 13.290.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638260724187732425_msi-gaming-vector-gp77-13v-den-dd.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Gaming Vector GP77</h4>
+                <p class="card-text text-danger h3">Giá: 29.690.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/637679951533296877_msi-gaming-alpha-15-den-rgb-1-zone-dd.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Gaming Alpha 15</h4>
+                <p class="card-text text-danger h3">Giá: 17.990.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638225118921376474_msi-gaming-creator-z16-xam-dd.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Gaming Creator Z16 HX Studio</h4>
+                <p class="card-text text-danger h3">Giá: 63.990.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638152553406546360_msi-modern-15-b7m-den-dd-icon.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Gaming Katana 15</h4>
+                <p class="card-text text-danger h3">Giá: 29.890.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop//brand/MSI/638260775438344888_msi-prestige-13evo-a13m-081vn-i7-1360p-xam-dd.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Laptop MSI Prestige 14Evo</h4>
+                <p class="card-text text-danger h3">Giá: 24.690.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+              </div>
+              <div class="card-footer text-right">
+                <a href="#" class="btn btn-outline-primary btn-sm">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 ">
+            <div class="card border-primary">
+              <img class="card-img-top" src="./img/Laptop/brand/MSI/638121561917481306_msi-gaming-gf63-thin-11uc-1228vn-i7-11800h-dd.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Laptop MSI Gaming GF63</h4>
                 <p class="card-text text-danger h3">Giá: 18.890.000<sup><span
@@ -165,257 +319,29 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">SamSung Galaxy A54 5G</h4>
-                <p class="card-text text-danger h3">Giá: 9.490.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Phụ kiện/Tai nghe/headphone-gaming-RGB.jpeg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Headphone Gaming ONIKUMA RGB LED có mic chống ồn</h4>
-                <p class="card-text text-danger h3">Giá: 304.248<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Tablet/ipad-gen-9-wifi.jpeg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">iPad Gen 9 2021 10.2 inch 64GB</h4>
-                <p class="card-text text-danger h3">Giá: 7.790.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <h3 class="text-white bg-primary mt-2 p-2 text-uppercase">các sản phẩm bán chạy nhất</h3>
-        <div class="row">
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/ip-14-pro-max-tim.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">iPhone 14 Pro Max 256GB</h4>
-                <p class="card-text text-danger h3">Giá: 29.690.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Laptop/gigabyte-gaming-g5-kf-e3vn313sh-i5-12500h-den.jpeg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Laptop Gigabyte Gaming MF-F2VN313SH</h4>
-                <p class="card-text text-danger h3">Giá: 21.290.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-s23-den-1.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Samsung Galaxy S23 Ultra 5G 256GB</h4>
-                <p class="card-text text-danger h3">Giá: 22.990.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Tablet/samsung-galaxy-tab-s6-lite-2022.jpeg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Samsung Galaxy Tab S6 Lite</h4>
-                <p class="card-text text-danger h3">Giá: 6.990.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <h3 class="text-white bg-primary mt-2 p-2 text-uppercase">các sản phẩm được quan tâm nhiều nhất</h3>
-        <div class="row">
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/iphone-15-pro-max.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">iPhone 15 Pro Max 256GB</h4>
-                <p class="card-text text-danger h3">Giá: 33.990.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-a34.jpeg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">SamSung Galaxy A54 5G</h4>
-                <p class="card-text text-danger h3">Giá: 31.990.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-z-flip5-xanh.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Samsung Galaxy Z Flip5 5G 256GB</h4>
-                <p class="card-text text-danger h3">Giá: 16.990.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-fold5-xanh.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Samsung Galaxy Z Fold5 5G 256GB</h4>
-                <p class="card-text text-danger h3">Giá: 29.990.000<sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center mt-3">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </div>
-  <!-- Pagination -->
-  <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center mt-3">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-          <span class="sr-only">Previous</span>
-        </a>
-      </li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-          <span class="sr-only">Next</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- Video - google Map -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-12 col-xl-12 ">
-        <div class="row">
-          <div class="col-12 col-md-5 col-xl-5 ">
-            <div class="tieude">
-              Video giới thiệu
-            </div>
-            <div class="video">
-              <video controls style="width: 100%;">
-                <source src="./video/2022 Nitro 5 - Gaming Laptop - Acer.mp4" type="video/mp4">
-                Trình duyệt không hỗ trợ
-              </video>
-            </div>
-          </div>
-          <div class="col-12 col-md-7 col-xl-7 ">
-            <div class="tieude">
-              Bản đồ đường đi
-            </div>
-            <div class="googleMap">
-              <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.9793074373802!2d106.68195579340502!3d10.759979238841094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7c3ed289%3A0xa06651894598e488!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTw6BpIEfDsm4!5e0!3m2!1svi!2s!4v1700316873752!5m2!1svi!2s"
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="clear: both;"></div>
   </div>
   <!-- Footer -->
   <div class="container-fluid">
@@ -426,15 +352,18 @@
         <p class="text-justify"><a href="#">Hướng dẫn mua online</a></p>
         <p class="text-justify"><a href="#">Hướng dẫn mua trả góp</a></p>
         <p class="text-justify"><a href="#">Chính sách trả góp</a></p>
-        <p class="text-justify"><a href="#">Chính sách thu thập <br><span class="pl-2">và </span>xử lý dữ liệu cá nhân</a></p>
+        <p class="text-justify"><a href="#">Chính sách thu thập <br><span class="pl-2">và </span>xử lý dữ liệu cá
+            nhân</a></p>
         <p class="text-justify"><a href="#">Chính sách đổi trả</a></p>
         <p class="text-justify"><a href="#">Hệ thống bảo hành</a></p>
       </div>
       <div class="col-12 col-md-3 col-xl-3 bg-dark text-white p-2">
         <h5>Giới thiệu về công ty</h5>
-        <p class="text-justify">Hoản Hảo PC là 1 hệ thống cửa hàng lớn chuyên về các thiết bị điện tử thông minh như: Laptop, Điện thoại và
+        <p class="text-justify">Hoản Hảo PC là 1 hệ thống cửa hàng lớn chuyên về các thiết bị điện tử thông minh như:
+          Laptop, Điện thoại và
           các loại Phụ kiện khác đi kèm.</p>
-        <p class="text-justify">HHPC shop sẽ cung cấp tới mọi tầng lớp khách hàng trải nghiệm mua sắm tích cực, từ sản phẩm Kỹ thuật số chính
+        <p class="text-justify">HHPC shop sẽ cung cấp tới mọi tầng lớp khách hàng trải nghiệm mua sắm tích cực, từ sản
+          phẩm Kỹ thuật số chính
           hãng chất lượng cao, giá cả cạnh tranh đi kèm dịch vụ chăm sóc khách hàng thân thiện, được đảm bảo bởi uy tín
           của doanh nghiệp.</p>
         <h5>Kết nối với chúng tôi</h5>
@@ -454,9 +383,12 @@
       </div>
       <div class="col-12 col-md-3 col-xl-3 bg-dark text-white p-2">
         <h5>Hệ thống cửa hàng</h5>
-        <p class="text-justify"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i> CSC: 273 An Dương Vương, P.3, Q.5, TP.HCM</p>
-        <p class="text-justify"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i> CS1: 28 Nguyễn Thông, Q.3, TP.HCM</p>
-        <p class="text-justify"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i> CS2: 04 Tôn Đức Thắng, Q.1, TP.HCM</p>
+        <p class="text-justify"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i> CSC: 273 An Dương Vương,
+          P.3, Q.5, TP.HCM</p>
+        <p class="text-justify"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i> CS1: 28 Nguyễn Thông,
+          Q.3, TP.HCM</p>
+        <p class="text-justify"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i> CS2: 04 Tôn Đức Thắng,
+          Q.1, TP.HCM</p>
       </div>
       <div class="col-12 col-md-3 col-xl-3 bg-dark text-white p-2">
         <h5>Hỗ trợ thanh toán:</h5>
