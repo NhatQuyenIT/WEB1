@@ -82,3 +82,11 @@ p a:hover{
 .list-group-item.my-font{
   font-size: 1.75rem;
 }
+
+body,.jumbotron {
+  background-image: linear-gradient(to right bottom,#d4ccc3,#FFCC00);
+}
+.card {
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px rgb(144, 112, 112);
+}
