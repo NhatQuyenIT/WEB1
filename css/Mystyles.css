@@ -56,3 +56,35 @@
     padding-top: 15px;
     padding: 10px;
 }
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.card-title {
+  font-size: 1.2rem;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+  text-align: center;
+}
+
+  body,.jumbotron {
+    background-image: linear-gradient(to right bottom,#d4ccc3,#FFCC00);
+}
+img {
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.lead {
+  font-weight: 600;
+  font-size: 1.5rem;  
+}
+.card {
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px rgb(144, 112, 112);
+}

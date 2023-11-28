@@ -212,7 +212,7 @@
       if (!element.parentNode) {
         return null;
       }
-
+      
       return Util.findShadowRoot(element.parentNode);
     },
     jQueryDetection: function jQueryDetection() {
