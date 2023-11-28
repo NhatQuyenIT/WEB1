@@ -59,7 +59,7 @@
     padding-top: 15px;
     padding: 10px;
 }
-li a:not(.active):hover{
+.nav-link:not(.active):hover{
   color: yellow !important;
   background-color: orange !important;
 }
