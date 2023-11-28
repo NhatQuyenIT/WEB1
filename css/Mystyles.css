@@ -88,3 +88,6 @@ img {
   cursor: pointer;
   box-shadow: 0 0 5px 5px rgb(144, 112, 112);
 }
+.card-link {
+  display: inline-block;
+}
