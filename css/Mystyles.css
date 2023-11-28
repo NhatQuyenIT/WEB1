@@ -1,0 +1,84 @@
+.jumbotron{
+    margin-bottom: 0rem !important;
+}
+.tieude{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+.navbar-nav .nav-link {
+  color: white !important; /* Set the text color to white */
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-text {
+    margin-top: auto;
+  }
+  .card-text sup {
+    vertical-align: super;
+    font-size: 70%;
+    margin-left: 2px;
+  }
+  .card-text sup {
+    vertical-align: super;
+    font-size: 70%;
+    margin-left: 2px;
+  }
+  .card-body {
+    flex-grow: 1;
+  }
+
+  .card-footer {
+    flex-shrink: 0;
+  }
+  .card img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi điều chỉnh kích thước */
+  }
+/* Video - google Map */
+.video{
+    width:100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.googleMap{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding: 10px;
+}
+.nav-link:not(.active):hover{
+  color: yellow !important;
+  background-color: orange !important;
+}
+p a{
+  color: white !important;
+  padding: 10px;
+}
+p a:hover{
+  color: blue !important;
+}
+.list-group-item.active {
+  background-color: #4CAF50 !important; /* Mã màu xanh lá bạn muốn sử dụng */
+  color: #fff; /* Màu chữ sẽ hiển thị trên nền xanh lá */
+  border: 1px solid #4CAF50 !important; /* Thêm border style ở đây */
+}
+.list-group-item:not(.active):hover {
+  color: yellow !important;
+  background-color: orange !important;
+}
+.list-group-item.my-font{
+  font-size: 1.75rem;
+}
