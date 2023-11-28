@@ -8,6 +8,9 @@
     font-weight: 900;
     margin-top: 15px;
 }
+.navbar-nav .nav-link {
+  color: white !important; /* Set the text color to white */
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -56,6 +59,7 @@
     padding-top: 15px;
     padding: 10px;
 }
+<<<<<<< HEAD
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 500;
@@ -90,4 +94,28 @@ img {
 }
 .card-link {
   display: inline-block;
+=======
+.nav-link:not(.active):hover{
+  color: yellow !important;
+  background-color: orange !important;
+}
+p a{
+  color: white !important;
+  padding: 10px;
+}
+p a:hover{
+  color: blue !important;
+}
+.list-group-item.active {
+  background-color: #4CAF50 !important; /* Mã màu xanh lá bạn muốn sử dụng */
+  color: #fff; /* Màu chữ sẽ hiển thị trên nền xanh lá */
+  border: 1px solid #4CAF50 !important; /* Thêm border style ở đây */
+}
+.list-group-item:not(.active):hover {
+  color: yellow !important;
+  background-color: orange !important;
+}
+.list-group-item.my-font{
+  font-size: 1.75rem;
+>>>>>>> 39d2068a0e2a362f8e77776369c602375219a001
 }
