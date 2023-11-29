@@ -90,3 +90,65 @@ body,.jumbotron {
   cursor: pointer;
   box-shadow: 0 0 5px 5px rgb(144, 112, 112);
 }
+
+/* Chi tiet san pham */
+
+.product{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 30px 20px 30px 20px ;
+  padding: 20px;
+  border: 2px solid gray;
+}
+.product-img{
+  position: relative;
+
+}
+
+.product-img-msi{
+  width: 45rem;
+  height: 45rem;
+}
+
+.product-infor{
+  position: relative;
+  padding: 30px;
+  top: 10px;
+  left: 40px;
+}
+
+.product-infor-name{
+  font-weight: 900;
+}
+
+.product-infor-name h1:first-child{
+  font-size: 3rem;
+}
+
+.product-infor-name h1:nth-child(2) {
+  color: red;
+}
+
+
+
+.product--i
+
+table, tr, td {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  height: fit-content;
+  border: 2px solid gray;
+  padding: 5px;
+  background-color: white; 
+}
+
+tr{
+  width: 50%;
+}
+
+td{
+  width: 50%;
+}
