@@ -1,3 +1,7 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .jumbotron{
     margin-bottom: 0rem !important;
 }
@@ -97,9 +101,8 @@ body,.jumbotron {
   width: 100%;
   height: auto;
   display: flex;
-  margin: 30px 20px 30px 20px ;
+  margin: 50px 20px 30px 20px ;
   padding: 20px;
-  border: 2px solid gray;
 }
 .product-img{
   position: relative;
@@ -111,9 +114,9 @@ body,.jumbotron {
   height: 45rem;
 }
 
-.product-infor{
+/* .product-infor{
   position: relative;
-  padding: 30px;
+  padding: 0px 30px;
   top: 10px;
   left: 40px;
 }
@@ -131,8 +134,6 @@ body,.jumbotron {
 }
 
 
-
-.product--i
 
 table, tr, td {
   position: relative;
@@ -152,3 +153,118 @@ tr{
 td{
   width: 50%;
 }
+
+.product-infor-payment{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top:50px;
+  
+}
+
+.buynow{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  background-color: red;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+}
+
+.buynow strong{
+  font-size: 1.5rem;
+}
+
+.addbag{
+  width: 25%;
+  background-color: red;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+} */
+
+.product-detail-center{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-left: 40px;
+  
+}
+
+.product-detail-top-title h1{
+  font-weight: 1000;
+  font-size: 3rem;
+}
+
+.product-detail-top-title span{
+  font-size: 2rem;
+  font-weight: 650;
+  color: red;
+}
+
+.product-detail-top-buy button{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: red;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  margin: 0 auto; /* Thêm dòng này để căn giữa theo chiều ngang */
+  margin-top: 20px; /* Thêm dòng này để tạo khoảng cách từ phía trên */
+  margin-bottom: 20px;
+}
+
+.product-detail-top-buy strong{
+  font-size: 1.5rem;
+}
+
+.product-detail-bottom{
+  border: 1.5px solid gray;
+  width: 100%;
+  height: fit-content;
+}
+
+.product-detail-bottom-text table tbody tr td{
+  font-size: 20px;
+  padding: 20px;
+}
+
+.product-detail-right {
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 1.5px solid gray;
+}
+
+.product-detail-right-1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.product-detail-right-2 {
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.product-detail-right-3{
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.product-detail-right-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
