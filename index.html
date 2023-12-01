@@ -15,6 +15,7 @@
   <!-- FontAwesome CSS  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/Mystyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -96,8 +97,22 @@
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Account</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</a>
+        <li class="nav-item "  >
+          <a href="#" class="nav-link " id="cart-icon">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</a>
+          </a>
+          <div class="cart">
+            <h2 class="cart-title" style="font-weight: bold;text-align: center;" >Giỏ hàng của bạn</h2>
+            <div class="cart-content">
+                
+            </div>
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">0đ</div>
+            </div>
+            <button type="button" class="btn-buy">Mua ngay</button>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+          </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -153,20 +168,20 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Laptop Gaming MSI GF63</h4>
-                  <p class="card-text text-danger h4">Giá: 18.890.000<sup><span
+                  <h4 class="card-title product-title">Laptop Gaming MSI GF63</h4>
+                  <p class="card-text text-danger h4 price ">18.890.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+               
+                  <i class="fa fa-shopping-cart add-cart" aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i> 
+                
               </div>
             </div>
           </div>
@@ -175,20 +190,20 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">SamSung Galaxy A54 5G</h4>
-                  <p class="card-text text-danger h4">Giá: 9.490.000<sup><span
+                  <h4 class="card-title product-title">SamSung Galaxy A54 5G</h4>
+                  <p class="card-text text-danger h4 price">9.490.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
+                
               </div>
             </div>
           </div>
@@ -197,20 +212,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Phụ kiện/Tai nghe/headphone gaming RGB.webp" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Phụ kiện/Tai nghe/headphone gaming RGB.webp" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Headphone Gaming ONIKUMA RGB LED </h4>
-                  <p class="card-text text-danger h4">Giá: 304.248<sup><span
+                  <h4 class="card-title product-title">Headphone Gaming ONIKUMA RGB LED </h4>
+                  <p class="card-text text-danger h4 price">304.248<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -219,20 +232,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Tablet/ipad-gen-9-wifi.jpeg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Tablet/ipad-gen-9-wifi.jpeg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">iPad Gen 9 2021 10.2 inch 64GB</h4>
-                  <p class="card-text text-danger h4">Giá: 7.790.000<sup><span
+                  <h4 class="card-title product-title">iPad Gen 9 2021 10.2 inch 64GB</h4>
+                  <p class="card-text text-danger h4 price">7.790.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -245,20 +256,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Smartphone/ip-14-pro-max-tim.jpg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/ip-14-pro-max-tim.jpg" alt="">
                 </div>
                   <div class="card-body">
-                  <h4 class="card-title">iPhone 14 Pro Max 256GB</h4>
-                  <p class="card-text text-danger h4">Giá: 29.690.000<sup><span
+                  <h4 class="card-title product-title">iPhone 14 Pro Max 256GB</h4>
+                  <p class="card-text text-danger h4 price">29.690.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -267,20 +276,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Laptop/gigabyte-gaming-g5-kf-e3vn313sh-i5-12500h-den.jpeg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Laptop/gigabyte-gaming-g5-kf-e3vn313sh-i5-12500h-den.jpeg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Laptop Gigabyte Gaming MF-F2VN313SH</h4>
-                  <p class="card-text text-danger h4">Giá: 21.290.000<sup><span
+                  <h4 class="card-title product-title">Laptop Gigabyte Gaming MF-F2VN313SH</h4>
+                  <p class="card-text text-danger h4 price">21.290.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -289,20 +296,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Smartphone/samsung-galaxy-s23-den-1.jpg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/samsung-galaxy-s23-den-1.jpg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Samsung Galaxy S23 Ultra 5G 256GB</h4>
-                  <p class="card-text text-danger h4">Giá: 22.990.000<sup><span
+                  <h4 class="card-title product-title">Samsung Galaxy S23 Ultra 5G 256GB</h4>
+                  <p class="card-text text-danger h4 price">22.990.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -311,20 +316,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Tablet/samsung-galaxy-tab-s6-lite-2022.jpeg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Tablet/samsung-galaxy-tab-s6-lite-2022.jpeg" alt="">
                 </div>
                   <div class="card-body">
-                  <h4 class="card-title">Samsung Galaxy Tab S6 Lite</h4>
-                  <p class="card-text text-danger h4">Giá: 6.990.000<sup><span
+                  <h4 class="card-title product-title">Samsung Galaxy Tab S6 Lite</h4>
+                  <p class="card-text text-danger h4 price">6.990.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
-                  </div>
+                  </div>  
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -337,20 +340,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Smartphone/iphone-15-pro-max.jpg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/iphone-15-pro-max.jpg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">iPhone 15 Pro Max 256GB</h4>
-                  <p class="card-text text-danger h4">Giá: 33.990.000<sup><span
+                  <h4 class="card-title product-title">iPhone 15 Pro Max 256GB</h4>
+                  <p class="card-text text-danger h4 price">33.990.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -359,20 +360,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Smartphone/samsung-galaxy-s24.jpg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/samsung-galaxy-s24.jpg" alt="">
                 </div>
                   <div class="card-body">
-                    <h4 class="card-title">Samsung Galaxy S24 Ultra 5G 256GB</h4>
-                  <p class="card-text text-danger h4">Giá: 31.990.000<sup><span
+                    <h4 class="card-title product-title">Samsung Galaxy S24 Ultra 5G 256GB</h4>
+                  <p class="card-text text-danger h4 price">31.990.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -381,20 +380,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2" src="./img/Smartphone/samsung-galaxy-z-flip5-xanh.jpg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/samsung-galaxy-z-flip5-xanh.jpg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Samsung Galaxy Z Flip5 5G 256GB</h4>
-                  <p class="card-text text-danger h4">Giá: 16.990.000<sup><span
+                  <h4 class="card-title product-title">Samsung Galaxy Z Flip5 5G 256GB</h4>
+                  <p class="card-text text-danger h4 price">16.990.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -404,20 +401,18 @@
               <a href="detail.html" class="card__link">
                 <div class="image">
 
-                  <img class="card-img-top img2 " src="./img/Smartphone/samsung-galaxy-fold5-xanh.jpg" alt="">
+                  <img class="card-img-top img2 pro" src="./img/Smartphone/samsung-galaxy-fold5-xanh.jpg" alt="">
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Samsung Galaxy Z Fold5 5G 256GB</h4>
-                  <p class="card-text text-danger h4">Giá: 29.990.000<sup><span
+                  <h4 class="card-title product-title">Samsung Galaxy Z Fold5 5G 256GB</h4>
+                  <p class="card-text text-danger h4 price">Giá: 29.990.000<sup><span
                     style="text-decoration: underline;">đ</span></sup></p>
                   </div>
                 </a>
               <div class="card-footer text-center">
                 <a href="detail.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
-                </a>
+                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem;"> Đặt mua</i>
               </div>
             </div>
           </div>
@@ -534,7 +529,7 @@
   </div>
   </div>
 
-  
+  <script src="detail.js"></script>
 </body>
 
 </html>
