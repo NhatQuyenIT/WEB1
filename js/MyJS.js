@@ -30,5 +30,3 @@ function showError(error) {
             break;
     }
 }
-
-
