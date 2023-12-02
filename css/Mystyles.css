@@ -37,6 +37,13 @@ body{
     font-size: 70%;
     margin-left: 2px;
   }
+  .card-text h3{
+    text-align: center;
+  }
+.card-text-text-danger-h3{
+  text-align: center;
+}
+
   .card-body {
     flex-grow: 1;
   }
@@ -45,9 +52,10 @@ body{
     flex-shrink: 0;
   }
   .card img {
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover; /* Đảm bảo ảnh không bị méo khi điều chỉnh kích thước */
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của khung */
+    height: auto; /* Duy trì tỷ lệ khung hình */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 10px; /* Bạn có thể điều chỉnh giá trị để làm cong góc ảnh */
   }
 /* Video - google Map */
 .video{
@@ -67,13 +75,17 @@ body{
   color: yellow !important;
   background-color: orange !important;
 }
+.card-title a{
+  text-decoration: none;
+  color: inherit;
+}
 p a{
   color: white !important;
   padding: 10px;
 }
-p a:hover{
+/* p a:hover{
   color: blue !important;
-}
+} */
 .list-group-item.active {
   background-color: #4CAF50 !important; /* Mã màu xanh lá bạn muốn sử dụng */
   color: #fff; /* Màu chữ sẽ hiển thị trên nền xanh lá */
@@ -101,97 +113,25 @@ body,.jumbotron {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   margin: 50px 20px 30px 20px ;
   padding: 20px;
 }
 .product-img{
   position: relative;
-
 }
-
+.product-top{
+  display: flex;
+}
 .product-img-msi{
   width: 45rem;
   height: 45rem;
 }
-
-/* .product-infor{
-  position: relative;
-  padding: 0px 30px;
-  top: 10px;
-  left: 40px;
-}
-
-.product-infor-name{
-  font-weight: 900;
-}
-
-.product-infor-name h1:first-child{
-  font-size: 3rem;
-}
-
-.product-infor-name h1:nth-child(2) {
-  color: red;
-}
-
-
-
-table, tr, td {
-  position: relative;
-  font-size: 20px;
-  font-weight: 500;
-  width: 100%;
-  height: fit-content;
-  border: 2px solid gray;
-  padding: 5px;
-  background-color: white; 
-}
-
-tr{
-  width: 50%;
-}
-
-td{
-  width: 50%;
-}
-
-.product-infor-payment{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top:50px;
-  
-}
-
-.buynow{
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  background-color: red;
-  align-items: center;
-  border-radius: 15px;
-  padding: 10px;
-  color: white;
-}
-
-.buynow strong{
-  font-size: 1.5rem;
-}
-
-.addbag{
-  width: 25%;
-  background-color: red;
-  align-items: center;
-  border-radius: 15px;
-  padding: 20px;
-  color: white;
-} */
-
 .product-detail-center{
   display: flex;
   flex-direction: column;
   margin: 20px;
   margin-left: 40px;
-  
 }
 
 .product-detail-top-title h1{
@@ -200,7 +140,7 @@ td{
 }
 
 .product-detail-top-title span{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 650;
   color: red;
 }
@@ -224,7 +164,6 @@ td{
 }
 
 .product-detail-bottom{
-  border: 1.5px solid gray;
   width: 100%;
   height: fit-content;
 }
@@ -240,7 +179,7 @@ td{
   padding: 20px;
   margin-top: 20px;
   font-size: 20px;
-  border: 1.5px solid gray;
+  border: 2px solid black;
 }
 
 .product-detail-right-1 {
@@ -263,6 +202,67 @@ td{
 .product-detail-right-4 {
   display: flex;
   flex-direction: column;
+}
+
+.product-bot{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.product-detail-bot-left{
+  width: 60%;
+}
+
+.product-detail-bot-left-title{
+  padding: 5px;
+}
+.product-detail-bot-left-title h1,h3{
+  font-weight: bold;
+}
+.product-detail-bot-left h4, p{
+  padding: 10px;
+  width: 960px;
+}
+.product-detail-bot-left h4{
+  font-weight: bold;
+}
+
+.product-detail-bot-left-text img{
+  border-radius: 15px;
+}
+.product-detail-bot-right{
+  width: 45%;
+  text-align: center;
+}
+
+.product-detail-bot-right-title h1{
+  font-weight: bold;
+}
+
+.product-detail-bot-right-table table, tr, td{
+  border: 2px solid black;
+}
+.product-detail-bot-right-table table{
+  width:94%;
+
+}
+.product-detail-bot-right-table table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.product-detail-bot-right-table table tbody tr:nth-child(even) {
+  background-color: rgb(226, 219, 219);
+}
+
+.product-detail-bot-right-table td {
+  border: 2px solid black;
+  padding: 8px;
 }
 
 
