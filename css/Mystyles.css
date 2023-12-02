@@ -59,7 +59,17 @@
     padding-top: 15px;
     padding: 10px;
 }
+.nav-link.active{
+  background-color: #4CAF50 !important;
+}
 .nav-link:not(.active):hover{
+  color: yellow !important;
+  background-color: orange !important;
+}
+.dropdown-item.active{
+  background-color: #4CAF50 !important;
+}
+.dropdown-item:not(.active):hover{
   color: yellow !important;
   background-color: orange !important;
 }
