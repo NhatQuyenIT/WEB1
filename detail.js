@@ -137,5 +137,4 @@ document.addEventListener('DOMContentLoaded', function () {
         // Sử dụng định dạng tiền tệ 'vi-VN' với đồng (VND)
         return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     }
-    
 });

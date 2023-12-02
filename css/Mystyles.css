@@ -240,6 +240,10 @@ ul li {
 }.price.active {
   box-shadow: 0 0 3px 3px red;
 }
+.price {
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
 .price .active .line-middle0{
   color: red !important;
 } 
@@ -273,9 +277,10 @@ ul li {
 .cart-flex2 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 *{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif  ;
 }
 
 .image4 {
@@ -305,6 +310,9 @@ input[type="checkbox"]:checked ~ .content23 {
   top: 50%;
   left: 68%;
   transform: translate(-50%,-50%);
+}
+.information {
+  margin-top: 1rem;
 }
 input[type="checkbox"]:checked + .information-label::after {
   font-weight: 100;
