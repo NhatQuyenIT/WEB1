@@ -173,14 +173,24 @@ function login(e) {
             if (password == userArray[i].password) {
                 closeform();
                 localStorage.setItem('userlogin', JSON.stringify(userArray[i]));
-                window.location.reload(true);
+                updateUIAfterLogin(); // Thêm hàm này để cập nhật giao diện
                 return true;
             }
         }
-    }
+    } 
     document.getElementById('passwordloginerror').style.display = 'block';
     document.getElementById('passwordloginerror').innerHTML = 'Sai thông tin đăng nhập';
     return false;
+}
+function updateUIAfterLogin() {
+    var user = JSON.parse(localStorage.getItem('userlogin'));
+    var s = '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
+        '<li><button onClick="location.href=\'cart.html\'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</button></li>';
+    document.querySelector('#nav .topnav ul.right').innerHTML = s;
+}
+window.onload = function () {
+    checklogin(); // Thêm dòng này để kiểm tra đăng nhập khi tải trang
+    // ... (Các dòng mã khác)
 }
 
 function logout(url) {
@@ -192,17 +202,8 @@ function logout(url) {
 function checklogin() {
     if (localStorage.getItem('userlogin')) {
         var user = JSON.parse(localStorage.getItem('userlogin'));
-        var s = '';
-        if (user.username == 'admin') {
-            s = '<li><button onClick="window.location.href=\'admin/product.html\'"><img src="images/icon/settings.svg"></button></li>' +
-                '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
-                '<li><button onClick="location.href=\'cart.html\'"><img src="images/icon/carticon.svg"></button></li>' +
-                '<li><button onClick="showSearch()"><img src="images/icon/searchicon.svg"></button></li>';
-        } else {
-            s = '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
-                '<li><button onClick="location.href=\'cart.html\'"><img src="images/icon/carticon.svg"></button></li>' +
-                '<li><button onClick="showSearch()"><img src="images/icon/searchicon.svg"></button></li>';
-        }
+        var s = '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
+            '<li><button onClick="location.href=\'cart.html\'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</button></li>';
         document.querySelector('#nav .topnav ul.right').innerHTML = s;
     }
 }
@@ -210,17 +211,8 @@ function checklogin() {
 function checklogin2() {
     if (localStorage.getItem('userlogin')) {
         var user = JSON.parse(localStorage.getItem('userlogin'));
-        var s = '';
-        if (user.username == 'admin') {
-            s = '<li><button onClick="window.location.href=\'../admin/product.html\'"><img src="../images/icon/settings.svg"></button></li>' +
-                '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
-                '<li><button onClick="location.href=\'cart.html\'"><img src="../images/icon/carticon.svg"></button></li>' +
-                '<li><button onClick="showSearch()"><img src="../images/icon/searchicon.svg"></button></li>';
-        } else {
-            s = '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
-                '<li><button onClick="location.href=\'cart.html\'"><img src="../images/icon/carticon.svg"></button></li>' +
-                '<li><button onClick="showSearch()"><img src="../images/icon/searchicon.svg"></button></li>';
-        }
+        var s = '<li><button>' + user.fullname + '</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>' +
+            '<li><button onClick="location.href=\'cart.html\'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</button></li>';
         document.querySelector('#nav .topnav ul.right').innerHTML = s;
     }
 }
