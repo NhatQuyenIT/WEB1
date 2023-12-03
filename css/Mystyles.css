@@ -15,7 +15,24 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+	 /* Thiết lập màu nền và viền ban đầu cho card */
+	background-color: #ffffff; /* Màu nền trắng */
+    border: 1px solid #007BFF; /* Màu viền tối */
+    border-radius: 10px; /* Bo tròn góc */
+    transition: background-color 0.3s ease-in-out; /* Hiệu ứng chuyển động cho màu nền */
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
   }
+  /* Thay đổi màu nền và màu chữ của card khi di chuột qua */
+.card:hover {
+    background-color: orange; /* Màu nền primary khi hover */
+    color: #000; /* Màu chữ trắng khi hover */
+}
+/* Thay đổi màu chữ của giá khi di chuột vào card */
+.card:hover .price {
+    color: yellow !important; /* Màu chữ trắng khi hover */
+}
 .card-body {
     display: flex;
     flex-direction: column;
@@ -45,6 +62,27 @@
     width: 100%;
     object-fit: cover; /* Đảm bảo ảnh không bị méo khi điều chỉnh kích thước */
   }
+  .custom-tab {
+	margin-top: 30px;
+	margin-left: 5px;
+	border: 2px solid #007BFF !important;
+	/* Màu primary */
+	border-radius: 10px !important;
+	/* Bo tròn góc */
+	color: #000 !important;
+	font-size: 20px;
+	background: transparent !important;
+	/* Nền trong suốt */
+	padding: 10px 20px;
+	/* Khoảng cách nền và chữ */
+}
+
+.tab-pane {
+	background-color: none;
+	/* Màu nền xen kẽ */
+	padding: 20px;
+}
+
   /* CSS cho thanh tìm kiếm */
 .search-bar {
 	width: 300px !important; /* Điều chỉnh chiều rộng tùy ý */
@@ -64,7 +102,9 @@
     padding-top: 15px;
     padding: 10px;
 }
-
+.nav-item.nav-link{
+	font-size: 20px;
+}
 .nav-link.active{
   background-color: #4CAF50 !important;
 }
@@ -466,7 +506,7 @@ body,html,*{
 	}
 }
 
-@media screen  and (min-width: 601px) and (max-width: 900px){
+@media screen  and (min-width: 600px) and (max-width: 900px){
 	.container{
 		width: 95%;
 		margin: 0 auto;
@@ -504,7 +544,7 @@ body,html,*{
 		padding:  0;
 	}
 }
-@media screen  and (min-width: 901px) and (max-width: 1200px){
+@media screen  and (min-width: 900px) and (max-width: 1200px){
 	.container{
 		width: 90%;
 	}

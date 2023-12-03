@@ -177,7 +177,7 @@ function login(e) {
                 return true;
             }
         }
-    } 
+    }
     document.getElementById('passwordloginerror').style.display = 'block';
     document.getElementById('passwordloginerror').innerHTML = 'Sai thông tin đăng nhập';
     return false;
@@ -233,4 +233,20 @@ function customAlert(message, type) {
     setTimeout(function () {
         x.className = x.classList.remove("show");
     }, 3500);
+}
+function searchProduct() {
+    var input, filter, cards, cardContainer, title, i;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("productTabsContent");
+    cards = cardContainer.getElementsByClassName("card");
+
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-title");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
 }
