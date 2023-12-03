@@ -120,11 +120,12 @@
           <button onClick="location.href='cart.html'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</button>
         </li>
       </ul>
-      <div>
+      <div class="input-group-1">
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2 search-bar" id="search-inp" type="text" placeholder="Tìm kiếm">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"
-              aria-hidden="true"></i></button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="button-addon2" onclick="search()">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
         </form>
       </div>
       
@@ -540,7 +541,15 @@
 	</div>
 
 	<div id="customalert"></div>
+  <!-- Hiển thị kết quả tìm kiếm ở đây -->
+  <ul id="searchResults">
+    <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+</ul>
+
     <!-- JavaScript -->
   <script src="./js/MyJS.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/generalFunction.js"></script>
+  <script src="./js/category.js"></script>
 </body>
 </html>
