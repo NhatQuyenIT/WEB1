@@ -138,3 +138,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     }
 });
+
+document.getElementById("btnBuy").addEventListener("click", function() {
+    // Thực hiện các thao tác cần thiết trước khi chuyển hướng
+    // Ví dụ: Lưu thông tin giỏ hàng vào localStorage
+
+    // Chuyển hướng sang trang thanh toán
+    window.location.href = "checkout.html";
+  });
