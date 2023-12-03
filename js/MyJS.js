@@ -136,7 +136,7 @@ function createUser(e) {
     for (var i = 0; i < userArray.length; i++) {
         if (user.username == userArray[i].username) {
             document.getElementById('usererror').style.display = 'block';
-            document.getElementById('usererror').innerHTML = 'Tên đăng nhập đã có người sử dụng';
+            document.getElementById('usererror').innerHTML = 'Tên đăng nhập đã có người sử dụng!';
             username.focus();
             return false;
         }
@@ -174,12 +174,13 @@ function login(e) {
                 closeform();
                 localStorage.setItem('userlogin', JSON.stringify(userArray[i]));
                 updateUIAfterLogin(); // Thêm hàm này để cập nhật giao diện
+                customAlert('Bạn đã đăng nhập thành công!', 'success');
                 return true;
             }
         }
     }
     document.getElementById('passwordloginerror').style.display = 'block';
-    document.getElementById('passwordloginerror').innerHTML = 'Sai thông tin đăng nhập';
+    document.getElementById('passwordloginerror').innerHTML = 'Sai thông tin đăng nhập!';
     return false;
 }
 function updateUIAfterLogin() {
