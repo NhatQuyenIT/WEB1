@@ -147,6 +147,10 @@ body,.jumbotron {
   box-shadow: 0 0 5px 5px rgb(144, 112, 112);
 }
 
+body, .container {
+    overflow-x: hidden;
+}
+
 /* CSS Document */
 body,html,*{
 	margin: 0;
