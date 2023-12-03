@@ -45,6 +45,11 @@
     width: 100%;
     object-fit: cover; /* Đảm bảo ảnh không bị méo khi điều chỉnh kích thước */
   }
+  /* CSS cho thanh tìm kiếm */
+.search-bar {
+	width: 300px !important; /* Điều chỉnh chiều rộng tùy ý */
+	padding: 10px; /* Thêm padding để làm cho nó trông đẹp hơn */
+  }
 /* Video - google Map */
 .video{
     width:100%;
