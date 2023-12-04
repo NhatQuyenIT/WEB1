@@ -251,3 +251,13 @@ function searchProduct() {
         }
     }
 }
+function quantitydown() {
+    if (document.getElementById('quantity').value > 1) {
+        document.getElementById('quantity').value--;
+    }
+}
+function quantityup() {
+    if (document.getElementById('quantity').value > 1) {
+        document.getElementById('quantity').value++;
+    }
+}
