@@ -757,12 +757,12 @@ html,
 	margin-bottom: 30px;
 }
 
-.detail_bottom label {
-	font-size: 24px;
+.detail label {
+	font-size: 30px;
 	font-weight: bold;
 }
 
-.detail_bottom .addtocart {
+.detail .addtocart {
 	display: flex;
 	cursor: pointer;
 	font-size: 20pt;
@@ -770,28 +770,28 @@ html,
 	background-color: #ff4700;
 	color: #fff;
 	border: 2px solid #ff4700;
-	margin-left: 320px;
+	margin-left: 150px;
 }
 
-.detail_bottom .addtocart:hover {
+.detail .addtocart:hover {
 	background-color: #fff;
 	color: #ff4700;
 	border: 2px solid #ff4700;
 }
 
-.detail_bottom .quantitydown {
+.detail .quantitydown {
 	font-size: 14pt;
 	width: 40px;
 	height: 30px;
 }
 
-.detail_bottom .quantityup {
+.detail .quantityup {
 	font-size: 14pt;
 	width: 40px;
 	height: 30px
 }
 
-.detail_bottom #quantity {
+.detail #quantity {
 	text-align: center;
 	font-size: 14pt;
 	width: 100px;
@@ -831,4 +831,125 @@ html,
 .close:hover {
 	background-color: orange;
 	color: red;
+}
+
+.boxcenter {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.row1 {
+	float: left;
+	width: 100%;
+}
+
+.row1 h1 {
+	margin: 20px 0px;
+	color: #F60;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.mb1 {
+	margin-bottom: 20px;
+}
+
+.mr1 {
+	margin-right: 2%;
+}
+
+.boxtrai {
+	float: left;
+	width: 100%;
+}
+
+/* thong tin nhận hàng */
+
+.thongtinnhanhang tr td {
+	text-align: left;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 3px #000 solid;
+}
+
+.thongtinnhanhang input {
+	width: 100%;
+	font-size: 20px;
+	border: 3px #000 solid;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.thongtinnhanhang select {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.thongtinnhanhang option {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.dongy {
+	width: 200px;
+	border: 1px #F90 solid;
+	background-image: linear-gradient(#F90, #F60);
+	padding: 10px;
+	border-radius: 5px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.dongy:hover {
+	background-image: linear-gradient(#F30, #000);
+}
+
+.clearall {
+	width: 200px;
+	border: 1px #F90 solid;
+	background-image: linear-gradient(#F90, #F60);
+	padding: 10px;
+	border-radius: 5px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.clearall:hover {
+	background-image: linear-gradient(#F30, #000);
+}
+
+/* giỏ hàng */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #fff;
+	padding: 10px;
+}
+
+th,
+td {
+	border: 3px #000 solid;
+	text-align: center;
+}
+
+td div {
+	width: calc(100% - 20px);
+	padding: 0px 10px;
+	text-align: right;
+}
+
+th div {
+	width: calc(100% - 10px);
+	padding: 0px 5px;
+	text-align: right;
+	font-size: 1.5rem;
+}
+
+td img {
+	width: 100px;
 }
