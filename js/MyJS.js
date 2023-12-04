@@ -261,3 +261,64 @@ function quantityup() {
         document.getElementById('quantity').value++;
     }
 }
+// Hàm hiển thị cửa sổ popup với ảnh
+function showPopup(src) {
+    var popup = document.getElementById('imagePopup');
+    var imageContainer = document.getElementById('imageContainer');
+    imageContainer.innerHTML = '<img src="' + src + '" alt="Popup Image" class="popup-image">';
+    popup.style.display = 'block';
+}
+
+// Hàm đóng cửa sổ popup
+function closePopup() {
+    var popup = document.getElementById('imagePopup');
+    popup.style.display = 'none';
+}
+// Hàm hiển thị cửa sổ popup với ảnh
+function showPopup(src) {
+    var popup = document.getElementById('imagePopup');
+    var imageContainer = document.getElementById('imageContainer');
+    imageContainer.innerHTML = '<img src="' + src + '" alt="Popup Image" class="popup-image">';
+    popup.style.display = 'block';
+}
+
+// Hàm đóng cửa sổ popup
+function closePopup() {
+    var popup = document.getElementById('imagePopup');
+    popup.style.display = 'none';
+}
+
+// Hàm thêm sự kiện click cho tất cả ảnh trong class "trai"
+function addClickEventToImages() {
+    var images = document.querySelectorAll('.trai img');
+    images.forEach(function (image) {
+        image.addEventListener('click', function () {
+            showPopup(image.src);
+        });
+    });
+}
+
+// Gọi hàm khi trang được tải
+window.onload = function () {
+    addClickEventToImages();
+};
+// Thêm JavaScript cho tăng giảm số lượng
+    function quantityup() {
+        var quantityInput = document.getElementById('quantity');
+        var currentValue = parseInt(quantityInput.value);
+        var maxValue = parseInt(quantityInput.getAttribute('max'));
+
+        if (currentValue < maxValue) {
+            quantityInput.value = currentValue + 1;
+        }
+    }
+
+function quantitydown() {
+    var quantityInput = document.getElementById('quantity');
+    var currentValue = parseInt(quantityInput.value);
+    var minValue = parseInt(quantityInput.getAttribute('min'));
+
+    if (currentValue > minValue) {
+        quantityInput.value = currentValue - 1;
+    }
+}

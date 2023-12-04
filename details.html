@@ -13,12 +13,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
   <link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min2.css"> -->
-	<link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min3.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link href="./themes/css/bootstrappage.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min2.css"> -->
+  <link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="./themes/css/bootstrappage.css" rel="stylesheet" />
   <!-- FontAwesome CSS  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/Mystyles.css">
@@ -28,11 +28,11 @@
   <script src="./js/jquery-3.7.1.slim.js"></script>
   <script src="./js/jquery-3.7.1.slim.min.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
-	<script src="./themes/js/superfish.js"></script>
-	<script src="./themes/js/jquery.scrolltotop.js"></script>
-	<!-- global styles -->
-	<link href="./themes/css/flexslider.css" rel="stylesheet" />
-	<link href="./themes/css/main.css" rel="stylesheet" />
+  <!-- <script src="./themes/js/superfish.js"></script> -->
+  <!-- <script src="./themes/js/jquery.scrolltotop.js"></script> -->
+  <!-- global styles -->
+  <link href="./themes/css/flexslider.css" rel="stylesheet" />
+  <link href="./themes/css/main.css" rel="stylesheet" />
 
 </head>
 
@@ -164,47 +164,55 @@
   <!-- Content -->
   <div class="container">
     <div class="trai">
-        <img src="./img/Laptop/brand/MSI/638121568991277911_msi-gaming-gf63-thin-11-den-dd.jpg" alt="" class="bigsize">
-        <div>
-            <div class="khungImg">
-                <img src="./img/Laptop/brand/MSI/637639340540705429_msi-gaming-gf63-den-2.jpg"  alt="">
-            </div>
-            <div class="khungImg">
-                <img src="./img/Laptop/brand/MSI/637639340538048946_msi-gaming-gf63-den-3.jpg"  alt="">
-            </div>
-            <div class="khungImg">
-                <img src="./img/Laptop/brand/MSI/637639340539455202_msi-gaming-gf63-den-4.jpg"  alt="">
-            </div>
-            <div class="khungImg">
-                <img src="./img/Laptop/brand/MSI/637639340536799316_msi-gaming-gf63-den-5.jpg"  alt="">
-            </div>
+      <div>
+        <img src="./img/Laptop/brand/MSI/638121568991277911_msi-gaming-gf63-thin-11-den-dd.jpg" alt="" class="bigsize"
+          onclick="showPopup(this.src)">
+      </div>
+      <div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340540705429_msi-gaming-gf63-den-2.jpg" alt=""
+            onclick="showPopup(this.src)">
         </div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340538048946_msi-gaming-gf63-den-3.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340539455202_msi-gaming-gf63-den-4.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340536799316_msi-gaming-gf63-den-5.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+      </div>
     </div>
     <div class="phai">
-        <div class="detail">
-            <p class="h1 text-justify text-center">Chi tiết sản phẩm</p>
-            <div class="tieude">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</div>
-            <address class="info">
-              <strong>Nhà sãn xuất:</strong> <span>MSI</span><br>
-              <strong>Tình trạng:</strong> <span>Còn hàng</span><br>
-              <strong>Loại:</strong> <span>Gaming</span><br>							
-            </address>
-            <div class="gia">20.490.000<sup><span style="text-decoration: underline;">đ</span></sup> </div>
-        </div>
-        <div class="detail_bottom">
-          <label for="quantity">Số lượng: </label>
-          <button class="quantitydown" onClick="quantitydown()">-</button>
-          <input type="number" name="soluong" id="quantity" value="1" min="1" max="10" step="1">
-          <button class="quantityup" onClick="quantityup()">+</button>
-          <button type="button" class="addtocart">
-         <i class="fa fa-shopping-basket" aria-hidden="true"></i><span style="padding-left: 10px">Thêm vào giỏ</span>
+      <div class="detail">
+        <p class="h1 text-justify text-center">Chi tiết sản phẩm</p>
+        <div class="tieude">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</div>
+        <address class="info">
+          <strong>Nhà sãn xuất:</strong> <span>MSI</span><br>
+          <strong>Tình trạng:</strong> <span>Còn hàng</span><br>
+          <strong>Loại:</strong> <span>Gaming</span><br>
+        </address>
+        <div class="gia">20.490.000<sup><span style="text-decoration: underline;">đ</span></sup> </div>
+      </div>
+      <div class="detail_bottom">
+        <!-- Sử dụng các hàm mới trong HTML -->
+        <label for="quantity">Số lượng: </label>
+        <button class="quantitydown" onclick="quantitydown()">-</button>
+        <input type="number" name="soluong" id="quantity" value="1" min="1" max="10" step="1">
+        <button class="quantityup" onclick="quantityup()">+</button>
+        <button type="button" class="addtocart">
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i><span style="padding-left: 10px">Thêm vào giỏ</span>
         </button>
-          <hr>
+        <hr>
         <img src="./img/mua_tra_gop.png" alt="">
         <img src="./img/mua_hang.png" alt="">
-        </div>
+      </div>
     </div>
-</div>
+  </div>
   <!-- Footer -->
   <div class="container-fluid">
     <div class="row">
@@ -327,24 +335,30 @@
     <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
   </ul>
 
+  <div id="imagePopup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="imageContainer"></div>
+  </div>
+
   <!-- JavaScript -->
   <script src="./js/MyJS.js"></script>
   <script src="./themes/js/common.js"></script>
-		<script src="./themes/js/jquery.flexslider-min.js"></script>
-		<script type="text/javascript">
-			$(function () {
-				$(document).ready(function () {
-					$('.flexslider').flexslider({
-						animation: "fade",
-						slideshowSpeed: 4000,
-						animationSpeed: 600,
-						controlNav: false,
-						directionNav: true,
-						controlsContainer: ".flex-container" // the container that holds the flexslider
-					});
-				});
-			});
-		</script>
+  <script src="./themes/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(document).ready(function () {
+        $('.flexslider').flexslider({
+          animation: "fade",
+          slideshowSpeed: 4000,
+          animationSpeed: 600,
+          controlNav: false,
+          directionNav: true,
+          controlsContainer: ".flex-container" // the container that holds the flexslider
+        });
+      });
+    });
+  </script>
 
 </body>
+
 </html>

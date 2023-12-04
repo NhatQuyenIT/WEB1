@@ -61,13 +61,13 @@ var adjustMenu = function() {
 }
 
 //Menu
-$('#menu > ul').superfish({ 
-	delay:       100,                           
-	animation:   {opacity:'show', height:'show'}, 
-	speed:       'fast',
-	arrowClass: false,
-	autoArrows:  true
-});
+// $('#menu > ul').superfish({ 
+// 	delay:       100,                           
+// 	animation:   {opacity:'show', height:'show'}, 
+// 	speed:       'fast',
+// 	arrowClass: false,
+// 	autoArrows:  true
+// });
 
 $(document).ready(function(){
 	$(":checkbox").change(function(){
