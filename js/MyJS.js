@@ -242,3 +242,24 @@ function customAlert(message, type) {
         x.className = x.classList.remove("show");
     }, 3500);
 }
+function searchProducts() {
+    var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    var products = document.querySelectorAll('.card');
+
+    products.forEach(function (product) {
+        var title = product.querySelector('.product-title').textContent.toLowerCase();
+        if (title.includes(searchTerm)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+
+    // Hiển thị lại tất cả sản phẩm nếu ô tìm kiếm trống
+    if (searchTerm === '') {
+        products.forEach(function (product) {
+            product.style.display = 'block';
+        });
+    }
+}
+

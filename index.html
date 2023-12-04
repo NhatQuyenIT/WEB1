@@ -94,8 +94,8 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link  " href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Account</a>
+        <li class="nav-item pt-2" class="btn123">
+          <button  onClick="showform()" style="background-color: #343A40; color: white;"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tài khoản </button>
         </li>
         <li class="nav-item "  >
           <a href="#" class="nav-link  " id="cart-icon">
@@ -115,11 +115,17 @@
           </div>
         </li>
       </ul>
+     <!-- Thêm ô tìm kiếm -->
+     <div>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search <i class="fa fa-search"
-            aria-hidden="true"></i></button>
+        <div class="search-bar-container">
+          <input type="text" class="form-control search-bar" placeholder="Tìm kiếm sản phẩm" id="searchInput">
+          <button class="btn btn-outline-primary" onclick="searchProducts()">
+            <i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm
+        </button>
+      </div>
       </form>
+    </div>
     </div>
   </nav>
   <!-- Banner -->
@@ -164,26 +170,26 @@
         <h3 class="text-white bg-primary mt-2 p-2 text-uppercase">các sản phẩm đã xem gần đây nhất</h3>
         <div class="row">
           <div class="col-12 col-md-6 col-xl-3 ">
-            <div class="card border-primary">
-              <a href="detail.html" class="card__link">
-                <div class="image">
+              <div class="card border-primary">
+                <a href="detail.html" class="card__link">
+                  <div class="image">
 
-                  <img class="card-img-top img2 pro" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title product-title">Laptop Gaming MSI GF63</h4>
-                  <p class="card-text text-danger h4 price ">18.890.000<sup><span
-                    style="text-decoration: underline;">đ</span></sup></p>
+                    <img class="card-img-top img2 pro" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
                   </div>
-                </a>
-              <div class="card-footer text-center">
-                <a href="detail.html" class="btn btn-outline-primary btn-sm">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-               
-                  <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem; "> <span style=" font-family: 'Times New Roman', Times, serif  ;">Đặt mua</span></i>
+                  <div class="card-body">
+                    <h4 class="card-title product-title">Laptop Gaming MSI GF63</h4>
+                    <p class="card-text text-danger h4 price ">18.890.000<sup><span
+                      style="text-decoration: underline;">đ</span></sup></p>
+                    </div>
+                  </a>
+                <div class="card-footer text-center">
+                  <a href="detail.html" class="btn btn-outline-primary btn-sm">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
                 
+                    <i class="fa fa-shopping-cart add-cart " aria-hidden="true"style="border: 1px solid red; padding: 0.4rem;color:red;margin-left: 1rem; "> <span style=" font-family: 'Times New Roman', Times, serif  ;">Đặt mua</span></i>
+                  
+                </div>
               </div>
-            </div>
           </div>
           <div class="col-12 col-md-6 col-xl-3 ">
             <div class="card border-primary">
@@ -526,8 +532,68 @@
     <p class="lead">&copy; Nhóm A07 2023-2024</p>
   </div>
   </div>
+  
+  <div id="user" class="modal">
+    <div id="login">
+      <form id="loginform">
+        <button type="button" class="close" onClick="closeform()">+</button>
+        <h2>ĐĂNG NHẬP</h2>
+        <div class="logininfo">
+          <div class="col">
+            <label for="usernameLogin">Tên đăng nhập:</label>
+            <input type="text" id="usernameLogin">
+            <div id="usernameerror">Bạn chưa nhập tên đăng nhập</div>
+            <label for="passwordLogin">Mật khẩu:</label>
+            <input type="password" id="passwordLogin">
+            <div id="passwordloginerror">Bạn chưa nhập mật khẩu</div>
+          </div>
+        </div>
+        <button type="submit" id="btnlogin">Login</button>
+        <p>Bạn chưa có tài khoản? <a href="#" onClick="showSignUp()">Đăng ký</a></p>
+      </form>
+    </div>
+    <div id="signup">
+      <form id="signupform">
+        <button type="button" class="close" onClick="closeform()">+</button>
+        <h2>ĐĂNG KÝ</h2>
+        <div class="signupinfo">
+          <div class="col">
+            <label for="fullname">Họ và tên: </label>
+            <input type="text" id="fullname">
+            <div id="fullnameerror">Bạn chưa nhập họ tên</div>
+            <label for="address">Địa chỉ: </label>
+            <input type="text" id="address">
+            <div id="addresserror">Bạn chưa địa chỉ</div>
+            <label for="phone">Số điện thoại: </label>
+            <input type="text" id="phone">
+            <div id="phoneerror">Bạn chưa nhập số điện thoại</div>
+          </div>
+          <div class="col">
+            <label for="usernameSignUp">Tên đăng nhập: </label>
+            <input type="text" id="usernameSignUp">
+            <div id="usererror">Bạn chưa nhập tên đăng nhập</div>
+            <label for="passwordSignUp">Mật khẩu: </label>
+            <input type="password" id="passwordSignUp">
+            <div id="passworderror">Bạn chưa nhập mật khẩu</div>
+            <label for="passwordSignUp2">Nhập lại mật khẩu: </label>
+            <input type="password" id="passwordSignUp2">
+            <div id="password2error">Mật khẩu không trùng khớp</div>
+          </div>
+        </div>
+        <button type="submit" id="btnsignup">Đăng ký</button>
+        <p>Trở về trang <a href="#" onClick="showLogin()">Đăng nhập</a></p>
+      </form>
+    </div>
+  </div>
 
+  <div id="customalert"></div>
+  <!-- Hiển thị kết quả tìm kiếm ở đây -->
+  <ul id="searchResults">
+    <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+  </ul>
+<script src="./js/checkout.js"></script>
   <script src="detail.js"></script>
+  <script src="./js/MyJS.js"></script>
 </body>
 
 </html>
