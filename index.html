@@ -13,12 +13,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
   <link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min2.css"> -->
-	<link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min3.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link href="./themes/css/bootstrappage.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="themes/css/font-awesome.min2.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./themes/css/font-awesome.min3.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="./themes/css/bootstrappage.css" rel="stylesheet" />
   <!-- FontAwesome CSS  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/Mystyles.css">
@@ -28,11 +28,11 @@
   <script src="./js/jquery-3.7.1.slim.js"></script>
   <script src="./js/jquery-3.7.1.slim.min.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
-	<script src="./themes/js/superfish.js"></script>
-	<script src="./themes/js/jquery.scrolltotop.js"></script>
-	<!-- global styles -->
-	<link href="./themes/css/flexslider.css" rel="stylesheet" />
-	<link href="./themes/css/main.css" rel="stylesheet" />
+  <script src="./themes/js/superfish.js"></script>
+  <script src="./themes/js/jquery.scrolltotop.js"></script>
+  <!-- global styles -->
+  <link href="./themes/css/flexslider.css" rel="stylesheet" />
+  <link href="./themes/css/main.css" rel="stylesheet" />
 
 </head>
 
@@ -124,7 +124,7 @@
                 <button onclick="showform()"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tài khoản </button>
               </li>
               <li class="nav-item pt-2">
-                <button onClick="location.href='cart.html'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ
+                <button onclick="location.href='cart.html'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ
                   hàng</button>
               </li>
             </ul>
@@ -161,6 +161,29 @@
       </div>
     </div>
   </div>
+
+  <div class="giohang">
+    <a onclick="showcart()"><i class="fa fa-shopping-cart " aria-hidden="true"></i> <span id="countsp">0</span></a>
+  </div>
+  <div id="showcart">
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>Hình</th>
+        <th>Tên sản phẩm</th>
+        <th>Đơn giá</th>
+        <th>Số lượng</th>
+        <th>Thành tiền ($)</th>
+        <th>Xóa</th>
+      </tr>
+      <tbody id="mycart">
+
+      </tbody>
+    </table>
+    <br>
+    <a href="./cart.html">Thanh toán &rAarr;</a>
+    <button id="xoatatca" onclick="xoatatca()">Xóa tất cả</button>
+  </div>
   <!-- Content -->
   <div class="container">
     <ul class="nav nav-tabs" id="productTabs" role="tablist">
@@ -183,11 +206,12 @@
         <div class="row">
           <div class="col-12 col-md-6 col-xl-3 ">
             <div class="card border-primary">
-              <img class="card-img-top" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
+              <a href="./details.html">
+                <img class="card-img-top" src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt="">
+              </a>
               <div class="card-body">
                 <h4 class="card-title">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>18890000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>18890000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="./details.html" class="btn btn-outline-primary btn-sm">
@@ -200,16 +224,17 @@
           </div>
           <div class="col-12 col-md-6 col-xl-3 ">
             <div class="card border-primary">
-              <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt="">
+              <a href="./details/details1.html">
+                <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt="">
+              </a>
               <div class="card-body">
                 <h4 class="card-title">SamSung Galaxy A54 5G</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>9490000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>9490000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
+                <a href="./details/details1.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
+                <a href="./details/details1.html" class="btn btn-outline-danger btn-sm">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
                 </a>
               </div>
@@ -217,16 +242,17 @@
           </div>
           <div class="col-12 col-md-6 col-xl-3 ">
             <div class="card border-primary">
-              <img class="card-img-top" src="./img/Phụ kiện/Tai nghe/headphone-gaming-RGB.jpeg" alt="">
+              <a href="./details/details2.html" >
+                <img class="card-img-top" src="./img/Phụ kiện/Tai nghe/headphone-gaming-RGB.jpeg" alt="">
+              </a>
               <div class="card-body">
                 <h4 class="card-title">Headphone Gaming ONIKUMA RGB LED có mic chống ồn</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>304250</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>304250</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
+                <a href="./details/details2.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
+                <a href="./details/details2.html" class="btn btn-outline-danger btn-sm">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
                 </a>
               </div>
@@ -234,16 +260,17 @@
           </div>
           <div class="col-12 col-md-6 col-xl-3 ">
             <div class="card border-primary">
-              <img class="card-img-top" src="./img/Tablet/ipad-gen-9-wifi.jpeg" alt="">
+              <a href="./details/details3.html">
+                <img class="card-img-top" src="./img/Tablet/ipad-gen-9-wifi.jpeg" alt="">
+              </a>
               <div class="card-body">
                 <h4 class="card-title">iPad Gen 9 2021 10.2 inch 64GB</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>7790000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>7790000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary btn-sm">
+                <a href="./details/details3.html" class="btn btn-outline-primary btn-sm">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết</a>
-                <a href="#" class="btn btn-outline-danger btn-sm">
+                <a href="./details/details3.html" class="btn btn-outline-danger btn-sm">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i> Đặt mua
                 </a>
               </div>
@@ -261,8 +288,7 @@
                 alt="">
               <div class="card-body">
                 <h4 class="card-title">iPhone 14 Pro Max 256GB</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>29690000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>29690000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -279,8 +305,7 @@
               <img class="card-img-top" src="./img/Laptop/gigabyte-gaming-g5-kf-e3vn313sh-i5-12500h-den.jpeg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Laptop Gigabyte Gaming MF-F2VN313SH</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>21290000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>21290000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -296,8 +321,7 @@
               <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-s23-ultra-xanh-1.jpeg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Samsung Galaxy S23 Ultra 5G 256GB</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>23990000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>23990000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -313,8 +337,7 @@
               <img class="card-img-top" src="./img/Tablet/samsung-galaxy-tab-s6-lite-2022.jpeg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Samsung Galaxy Tab S6 Lite</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>6990000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>6990000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -334,8 +357,7 @@
               <img class="card-img-top" src="./img/Smartphone/iphone-15-pro-max.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">iPhone 15 Pro Max 256GB</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>33990000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>33990000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -350,9 +372,8 @@
             <div class="card border-primary">
               <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-a34.jpeg" alt="">
               <div class="card-body">
-                <h4 class="card-title">SamSung Galaxy A54 5G</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>31990000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <h4 class="card-title">SamSung Galaxy A34 5G</h4>
+                <p class="card-text text-danger h3 price">Giá:<span>31990000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -368,8 +389,7 @@
               <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-z-flip5-xanh.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Samsung Galaxy Z Flip5 5G 256GB</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>16990000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>16990000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -385,8 +405,7 @@
               <img class="card-img-top" src="./img/Smartphone/samsung-galaxy-fold5-xanh.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">Samsung Galaxy Z Fold5 5G 256GB</h4>
-                <p class="card-text text-danger h3 price">Giá:<span>29990000</span><sup><span
-                      style="text-decoration: underline;">đ</span></sup></p>
+                <p class="card-text text-danger h3 price">Giá:<span>29990000</span><span class="dvtt">đ</span></p>
               </div>
               <div class="card-footer text-right">
                 <a href="#" class="btn btn-outline-primary btn-sm">
@@ -580,22 +599,24 @@
 
   <!-- JavaScript -->
   <script src="./js/MyJS.js"></script>
+  <script src="./js/thuvien.js"></script>
   <script src="./themes/js/common.js"></script>
-		<script src="./themes/js/jquery.flexslider-min.js"></script>
-		<script type="text/javascript">
-			$(function () {
-				$(document).ready(function () {
-					$('.flexslider').flexslider({
-						animation: "fade",
-						slideshowSpeed: 4000,
-						animationSpeed: 600,
-						controlNav: false,
-						directionNav: true,
-						controlsContainer: ".flex-container" // the container that holds the flexslider
-					});
-				});
-			});
-		</script>
+  <script src="./themes/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(document).ready(function () {
+        $('.flexslider').flexslider({
+          animation: "fade",
+          slideshowSpeed: 4000,
+          animationSpeed: 600,
+          controlNav: false,
+          directionNav: true,
+          controlsContainer: ".flex-container" // the container that holds the flexslider
+        });
+      });
+    });
+  </script>
 
 </body>
+
 </html>

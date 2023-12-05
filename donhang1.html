@@ -154,26 +154,14 @@
     <div class="boxcenter">
         <div class="row mb ">
             <div class="boxtrai mr">
+                <div class="row mb">
+                    <h1 id="bill_success">ĐẶT HÀNG THÀNH CÔNG</h1>
+                </div>
                 <div class="row">
                     <h1>THÔNG TIN NHẬN HÀNG</h1>
                     <table class="thongtinnhanhang">
                         <tbody id="thongtinnhanhang">
-                            <tr>
-                                <td width="20%">Họ tên</td>
-                                <td><input type="text" name="hoten"></td>
-                            </tr>
-                            <tr>
-                                <td>Địa chỉ</td>
-                                <td><input type="text" name="diachi"></td>
-                            </tr>
-                            <tr>
-                                <td>Điện thoại</td>
-                                <td><input type="text" name="dienthoai"></td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td><input type="text" name="email"></td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -191,13 +179,11 @@
                         <tbody id="mycart"></tbody>
                     </table>
                 </div>
-                <div class="row mb">
-                    <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
-                </div>
             </div>
-
         </div>
-
+    </div>
+    <div>
+        <p>&nbsp;</p>
     </div>
     <!-- Footer -->
     <div class="container-fluid">
@@ -332,11 +318,13 @@
         <span class="close" onclick="closePopup()">&times;</span>
         <div id="imageContainer"></div>
     </div>
+
     <script src="./js/MyJS.js"></script>
     <script src="./js/thuvien.js"></script>
     <script src="./themes/js/common.js"></script>
     <script src="./themes/js/jquery.flexslider-min.js"></script>
     <script>
+        showthongtinnguoinhan();
         showgiohang_trangthanhtoan();
     </script>
 </body>

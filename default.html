@@ -173,7 +173,7 @@
         <th>Tên sản phẩm</th>
         <th>Đơn giá</th>
         <th>Số lượng</th>
-        <th>Thành tiền ($)</th>
+        <th>Thành tiền</th>
         <th>Xóa</th>
       </tr>
       <tbody id="mycart">
@@ -184,119 +184,112 @@
     <a href="./cart.html">Thanh toán &rAarr;</a>
     <button id="xoatatca" onclick="xoatatca()">Xóa tất cả</button>
   </div>
-  <!-- Content -->
-  <div class="container">
-    <div class="trai">
-      <div>
-        <img class="bigsize" src="./img/Laptop/brand/MSI/638121568991277911_msi-gaming-gf63-thin-11-den-dd.jpg" alt=""
-          onclick="showPopup(this.src)"> <!-- Lấy hình sản phẩm -->
-      </div>
-      <div>
-        <div class="khungImg">
-          <img src="./img/Laptop/brand/MSI/637639340540705429_msi-gaming-gf63-den-2.jpg" alt=""
-            onclick="showPopup(this.src)">
-        </div>
-        <div class="khungImg">
-          <img src="./img/Laptop/brand/MSI/637639340538048946_msi-gaming-gf63-den-3.jpg" alt=""
-            onclick="showPopup(this.src)">
-        </div>
-        <div class="khungImg">
-          <img src="./img/Laptop/brand/MSI/637639340539455202_msi-gaming-gf63-den-4.jpg" alt=""
-            onclick="showPopup(this.src)">
-        </div>
-        <div class="khungImg">
-          <img src="./img/Laptop/brand/MSI/637639340536799316_msi-gaming-gf63-den-5.jpg" alt=""
-            onclick="showPopup(this.src)">
-        </div>
-      </div>
-    </div>
-    <p class="h1 text-justify text-center text-danger">Chi tiết sản phẩm</p>
-    <div class="phai">
-      <div class="detail">
-        <div class="tieude">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</div> <!-- Lấy tên sản phẩm -->
-        <address class="info">
-          <strong>Nhà sãn xuất:</strong> <span>MSI</span><br>
-          <strong>Tình trạng:</strong> <span>Còn hàng</span><br>
-          <strong>Loại:</strong> <span>Chơi game</span><br>
-          <div class="gia">18.890.000<span class="dvtt">đ</span> </div> <!-- Lấy giá sản phẩm -->
-        </address>
-        <label for="quantity">Số lượng: </label>
-        <button class="quantitydown" onclick="quantitydown()">-</button>
-        <input type="number" name="soluong" id="quantity" value="1" min="1" max="10" step="1">
-        <!-- Lấy số lượng mua sản phẩm -->
-        <button class="quantityup" onclick="quantityup()">+</button>
-        <button type="button" class="addtocart" onclick="location.href='default.html'">
-          <i class="fa fa-shopping-basket" aria-hidden="true"></i><span style="padding-left: 10px">Mua ngay</span>
-          <!-- Nút thêm vào giỏ hàng -->
-        </button>
-      </div>
-      <div class="detail_bottom">
-        <hr>
-        <img src="./img/mua_tra_gop.png" alt="">
-        <img src="./img/mua_hang.png" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div style="width: 50%;" class="col-12 col-md-6 col-xl-6 mb-5">
-      <h3 style="margin-bottom: 1rem; font-weight: bold; margin-left: 200px;">Cấu hình: </h3>
-      <table style="width: 80%; font-size: 1.2rem; font-weight: 500; border:2px solid black" class="table__column">
-        <tr>
-          <td>Màn hình: </td>
-          <td>15,6 inch, 1920 x 1080 Pixels, IPS, 144 Hz, 250 nits, IPS</td>
-        </tr>
-        <tr>
-          <td>Hệ điều hành: </td>
-          <td>Windows 11 Home Single Language</td>
-        </tr>
-        <tr>
-          <td>Trọng lượng: </td>
-          <td>1.86 g</td>
-        </tr>
-        <tr>
-          <td>Kích thước : </td>
-          <td>359 * 245 * 21.7 mm</td>
-        </tr>
-        <tr>
-          <td>CPU: </td>
-          <td>Core i7 11800H</td>
-        </tr>
-        <tr>
-          <td>RAM: </td>
-          <td>8 GB, DDR4, 3200 MHz</td>
-        </tr>
-        <tr>
-          <td>Ổ cứng: </td>
-          <td>SSD 512 GB</td>
-        </tr>
-        <tr>
-          <td>Đồ họa: </td>
-          <td>NVIDIA GeForce GTX 1650 With Max-Q design 4GB</td>
-        </tr>
-        <tr>
-          <td>Xuất xứ : </td>
-          <td>Trung Quốc</td>
-        </tr>
-        <tr>
-          <td>Năm ra mắt: </td>
-          <td>2022</td>
-        </tr>
-      </table>
-    </div>
-    <div class="col-12 col-md-6 col-xl-6 mb-5">
-      <h3 style="text-align: center;font-size: 2rem; margin-top: 2rem; font-weight: bold;">Những tính năng nổi bật</h3>
-      <p style="font-size: 1.1rem; font-weight: 400; text-align: justify;  padding-right: 100px;">• Laptop Gaming với thiết kế mỏng nhẹ đi cùng lớp áo đen huyền bí,
-        trọng lượng siêu nhẹ trong dòng laptop Gaming chỉ 1.86kg dễ dàng mang đi mọi nơi.
-        <br>• CPU Intel Core i7-11800H cùng card đồ họa RTX 3050 cân mọi tựa game phổ biến hiện nay ở mức đồ họa Medium
-        đến Hight mà không thua kèm gì với những chiếc PC gaming.
-        <br>• Laptop RAM 8GB DDR4 cùng ổ cứng 512GB đa nhiệm mượt mà, cho không gian lưu trữ lớn, mở máy nhanh chóng,
-        thao tác nhanh gọn mà không lo lag, giật.
-        <br>• Máy trang bị nhiều cổng kết nối: USB Type-C, USB Type-A, HDMI, RJ45,... hỗ trợ kết nối, truyền, tải dữ
-        liệu nhanh chóng.
-      </p>
-    </div>
-  </div>
 
+  <!-- Content -->
+  <div class="boxcenter">
+    <div class="row mb ">
+      <div class="boxtrai mr">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Laptop/msi-gaming-gf63-thin-11uc-1228vn-i7-11800h.jpeg" alt=""></div>
+            <!-- index: 0  và có duy nhất 1 thẻ con-->
+            <p class="card-text text-danger h3 price"><span>18890000</span><span class="dvtt">đ</span></p>
+            <!-- index: 1 và có duy nhất 1 thẻ con -->
+            <a href="#">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</a>
+            <!-- index: 2 và không có thẻ con nào!!! -->
+            <input type="number" name="soluong" min="1" max="10" value="1"> <!-- index: 3 và không có thẻ con nào!!! -->
+            <button onclick="themvaogiohang(this)" class="nutdathang">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Smartphone/samsung-galaxy-a54-5g-den.jpeg" alt=""></div>
+            <p class="card-text text-danger h3 price1"><span>9490000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp1">SamSung Galaxy A54 5G</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Phụ kiện/Tai nghe/headphone-gaming-RGB.jpeg" alt=""></div>
+            <p class="card-text text-danger h3 price"><span>304250</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">Headphone Gaming ONIKUMA RGB LED có mic chống ồn</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Tablet/ipad-gen-9-wifi.jpeg" alt=""></div>
+            <p class="card-text text-danger h3 price"><span>7790000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">iPad Gen 9 2021 10.2 inch 64GB</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img
+                src="./img/Smartphone/iphone-14-pro-max-mau-tim-deep-purple-128gb-256gb-512gb-1tb-trang-thien-long-mobile-510x510.jpg"
+                alt=""></div>
+            <p class="card-text text-danger h3 price"><span>29690000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">iPhone 14 Pro Max 256GB</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img mb-5"><img src="./img/Laptop/gigabyte-gaming-g5-kf-e3vn313sh-i5-12500h-den.jpeg" alt="">
+            </div>
+            <p class="card-text text-danger h3 price1"><span>21290000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp1">Laptop Gigabyte Gaming MF-F2VN313SH</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Smartphone/samsung-galaxy-s23-ultra-xanh-1.jpeg" alt=""></div>
+            <p class="card-text text-danger h3 price"><span>23990000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">Samsung Galaxy S23 Ultra 5G 256GB</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Tablet/samsung-galaxy-tab-s6-lite-2022.jpeg" alt=""></div>
+            <p class="card-text text-danger h3 price"><span>6990000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">Samsung Galaxy Tab S6 Lite</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Smartphone/iphone-15-pro-max.jpg" alt=""></div>
+            <p class="card-text text-danger h3 price"><span>33990000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">iPhone 15 Pro Max 256GB</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Smartphone/samsung-galaxy-a34.jpeg" alt=""></div>
+            <p class="card-text text-danger h3 price"><span>31990000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp">SamSung Galaxy A34 5G</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Smartphone/samsung-galaxy-z-flip5-xanh.jpg" alt=""></div>
+            <p class="card-text text-danger h3 price1"><span>16990000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp1">Samsung Galaxy Z Flip5 5G 256GB</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 boxsp">
+            <div class="row img"><img src="./img/Smartphone/samsung-galaxy-fold5-xanh.jpg" alt=""></div>
+            <p class="card-text text-danger h3 price1"><span>29990000</span><span class="dvtt">đ</span></p>
+            <a href="#"class="tensp1">Samsung Galaxy Z Fold5 5G 256GB</a>
+            <input type="number" name="soluong" min="1" max="10" value="1">
+            <button onclick="themvaogiohang(this)">Đặt hàng</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
   <!-- Footer -->
   <div class="container-fluid">
     <div class="row">
