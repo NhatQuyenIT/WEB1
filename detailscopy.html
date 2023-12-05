@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>HHPC</title>
+  <link rel="icon" href="./img/HHPC_logo.ico" type="image/x-icon">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body onload="">
+
+  <!-- Header -->
+  <div class="jumbotron jumbotron-fluid pt-0 pb-2 mb-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-2 col-xl-2 pt-4">
+          <a href="#"><img src="./img/HHPC_logo.png" alt="HHPC logo" class="img-fluid rounded-circle"></a>
+        </div>
+        <div class="col-12 col-md-10 col-xl-10">
+          <h1 class="display-3 text-success">Shop Hoàn Hảo PC</h1>
+          <p class="lead text-info">Chào mừng quý khách đã đến với shop chúng tôi !</p>
+          <hr class="my-2">
+          <p class="lead">
+            <i class="fa fa-envelope-o" aria-hidden="true"> Email: </i> dhsg@sgu.edu.vn
+          </p>
+          <p class="lead"><i class="fa fa-phone" aria-hidden="true"> Hotline: </i> 028.38352309
+          </p>
+          <p class="lead">
+            <i class="fa fa-university" aria-hidden="true"> Trường: </i> Đại học Sài Gòn
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-0">
+    <a class="navbar-brand h2 text-primary" href="#"><i class="fa fa-cog fa-spin fa-1x fa-fw"></i>HHPC</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <div style="width: 45%">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active bg-success" href="./index.html"><i class="fa fa-home" aria-hidden="true"
+                style="font-size: larger;"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./laptop.html"><i class="fa fa-laptop" aria-hidden="true"></i> Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./DTDD.html"><i class="fa fa-mobile" aria-hidden="true"></i> Điện thoại di
+              động</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./MTB.html"><i class="fa fa-tablet" aria-hidden="true"></i> Máy tính bảng</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><i class="fa fa-headphones" aria-hidden="true"></i> Phụ kiện</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <h6 class="dropdown-item disabled">Danh mục</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./PhuKien.html">Tai nghe</a>
+              <a class="dropdown-item" href="./PhuKien1.html">Bàn phím</a>
+              <a class="dropdown-item" href="./PhuKien2.html">Chuột</a>
+              <a class="dropdown-item disabled" href="#">Cáp sạc</a>
+              <a class="dropdown-item disabled" href="#">Sạc dự phòng</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Flash Sales </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="nav" style="width: 55%;">
+        <div class="container">
+          <div class="topnav">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 right">
+              <li class="nav-item pt-2">
+                <button onclick="showform()"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tài khoản </button>
+              </li>
+              <li class="nav-item pt-2">
+                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</button>
+                <!-- onClick="location.href='cart.html'" -->
+              </li>
+            </ul>
+            <!-- Thêm ô tìm kiếm -->
+            <div>
+              <form class="form-inline my-2 my-lg-0">
+                <input type="text" class="form-control mr-sm-2 search-bar" placeholder="Tìm kiếm" id="searchInput">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchProduct()"><i
+                    class="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </nav>
+  <div id="showcart">
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Hình</th>
+            <th>Tên sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền ($)</th>
+        </tr>
+        <tbody id="mycart">
+
+        </tbody>
+    </table>
+</div>
+  <!-- Content -->
+  <div class="container">
+    <div class="trai">
+      <div>
+        <img class="bigsize" src="./img/Laptop/brand/MSI/638121568991277911_msi-gaming-gf63-thin-11-den-dd.jpg" alt=""  onclick="showPopup(this.src)"> <!-- Lấy hình sản phẩm -->
+      </div>
+      <div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340540705429_msi-gaming-gf63-den-2.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340538048946_msi-gaming-gf63-den-3.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340539455202_msi-gaming-gf63-den-4.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+        <div class="khungImg">
+          <img src="./img/Laptop/brand/MSI/637639340536799316_msi-gaming-gf63-den-5.jpg" alt=""
+            onclick="showPopup(this.src)">
+        </div>
+      </div>
+    </div>
+    <p class="h1 text-justify text-center text-danger">Chi tiết sản phẩm</p>
+    <div class="phai">
+      <div class="detail">
+        <div class="tieude">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</div> <!-- Lấy tên sản phẩm -->
+        <address class="info">
+          <strong>Nhà sãn xuất:</strong> <span>MSI</span><br>
+          <strong>Tình trạng:</strong> <span>Còn hàng</span><br>
+          <strong>Loại:</strong> <span>Gaming</span><br>
+          <div class="gia">18890000<span class="dvtt">đ</span> </div> <!-- Lấy giá sản phẩm -->
+      </address>
+        <label for="quantity">Số lượng: </label>
+        <button class="quantitydown" onclick="quantitydown()">-</button>
+        <input type="number" name="soluong" id="quantity" value="1" min="1" max="10" step="1"> <!-- Lấy số lượng mua sản phẩm -->
+        <button class="quantityup" onclick="quantityup()">+</button>
+        <button type="button" class="addtocart" onclick="themvaogiohang(this)">
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i><span style="padding-left: 10px">Thêm vào giỏ</span> <!-- Nút thêm vào giỏ hàng -->
+        </button>
+      </div>
+      <div class="detail_bottom">
+        <!-- Sử dụng các hàm mới trong HTML -->
+        <hr>
+        <img src="./img/mua_tra_gop.png" alt="">
+        <img src="./img/mua_hang.png" alt="">
+      </div>
+    </div>
+  </div>
+    <!-- JavaScript -->
+  <script type="text/javascript">
+   
+  </script>
+
+  <div id="customalert"></div>
+  <!-- Hiển thị kết quả tìm kiếm ở đây -->
+  <ul id="searchResults">
+    <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+  </ul>
+
+  <div id="imagePopup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="imageContainer"></div>
+  </div>
+</body>
+
+</html>

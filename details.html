@@ -121,11 +121,11 @@
           <div class="topnav">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 right">
               <li class="nav-item pt-2">
-                <button onClick="showform()"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tài khoản </button>
+                <button onclick="showform()"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Tài khoản </button>
               </li>
               <li class="nav-item pt-2">
-                <button onClick="location.href='cart.html'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ
-                  hàng</button>
+                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</button>
+                <!-- onClick="location.href='cart.html'" -->
               </li>
             </ul>
             <!-- Thêm ô tìm kiếm -->
@@ -141,6 +141,21 @@
         </div>
       </div>
   </nav>
+  <div id="showcart">
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Hình</th>
+            <th>Tên sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền ($)</th>
+        </tr>
+        <tbody id="mycart">
+
+        </tbody>
+    </table>
+</div>
   <!-- Banner -->
   <div id="carouselId" class="carousel slide text-center" data-ride="carousel">
     <div class="carousel-inner mb-5" role="listbox">
@@ -165,8 +180,7 @@
   <div class="container">
     <div class="trai">
       <div>
-        <img class="bigsize" src="./img/Laptop/brand/MSI/638121568991277911_msi-gaming-gf63-thin-11-den-dd.jpg" alt=""
-          onclick="showPopup(this.src)">
+        <img class="bigsize" src="./img/Laptop/brand/MSI/638121568991277911_msi-gaming-gf63-thin-11-den-dd.jpg" alt=""  onclick="showPopup(this.src)"> <!-- Lấy hình sản phẩm -->
       </div>
       <div>
         <div class="khungImg">
@@ -190,19 +204,19 @@
     <p class="h1 text-justify text-center text-danger">Chi tiết sản phẩm</p>
     <div class="phai">
       <div class="detail">
-        <div class="tieude">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</div>
+        <div class="tieude">Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H</div> <!-- Lấy tên sản phẩm -->
         <address class="info">
           <strong>Nhà sãn xuất:</strong> <span>MSI</span><br>
           <strong>Tình trạng:</strong> <span>Còn hàng</span><br>
           <strong>Loại:</strong> <span>Gaming</span><br>
-        </address>
-        <div class="gia">18890000<sup><span style="text-decoration: underline;">đ</span></sup> </div>
+          <div class="gia">18890000<span class="dvtt">đ</span> </div> <!-- Lấy giá sản phẩm -->
+      </address>
         <label for="quantity">Số lượng: </label>
         <button class="quantitydown" onclick="quantitydown()">-</button>
-        <input type="number" name="soluong" id="quantity" value="1" min="1" max="10" step="1">
+        <input type="number" name="soluong" id="quantity" value="1" min="1" max="10" step="1"> <!-- Lấy số lượng mua sản phẩm -->
         <button class="quantityup" onclick="quantityup()">+</button>
         <button type="button" class="addtocart" onclick="themvaogiohang(this)">
-          <i class="fa fa-shopping-basket" aria-hidden="true"></i><span style="padding-left: 10px">Thêm vào giỏ</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i><span style="padding-left: 10px">Thêm vào giỏ</span> <!-- Nút thêm vào giỏ hàng -->
         </button>
       </div>
       <div class="detail_bottom">
@@ -214,9 +228,7 @@
     </div>
   </div>
   <script type="text/javascript">
-    function themvaogiohang(x) {
-      
-}
+   
   </script>
   <!-- Footer -->
   <div class="container-fluid">
@@ -349,10 +361,6 @@
   <script src="./js/MyJS.js"></script>
   <script src="./themes/js/common.js"></script>
   <script src="./themes/js/jquery.flexslider-min.js"></script>
-  <script type="text/javascript">
-    
-  </script>
-
 </body>
 
 </html>

@@ -953,3 +953,19 @@ th div {
 td img {
 	width: 100px;
 }
+
+.showcart {
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 80px;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px #CCC solid;
+}
+
+.dvtt {
+	text-decoration: underline;
+	vertical-align: super;
+	font-size: smaller;
+}
