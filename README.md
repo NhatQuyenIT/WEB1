@@ -10,8 +10,8 @@ Sử dụng HTML, CSS, Bootstrap, jQuery
 |  3  | 3122411145 | [Lê Hồng Phát](https://www.facebook.com/fatle44)                           | DCT122C3 |
 |  4  | 3122411206 | [Bùi Văn Tiến](https://www.facebook.com/profile.php?id=100042330444272)| DCT122C3 |
 
-# Link repository: https://github.com/NhatQuyenIT/WEB1, 
-# Link github template pages: bom.so/HHPC hoặc https://nhatquyenit.github.io/WEB1/
+Link repository: https://github.com/NhatQuyenIT/WEB1, 
+Link github template pages: bom.so/HHPC hoặc https://nhatquyenit.github.io/WEB1/
 
 *TRANG CHU 
 ![alt text](./img/Web%20capture_29-1-2024_04620_127.0.0.1.jpeg)
