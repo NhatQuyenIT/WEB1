@@ -168,17 +168,24 @@ function login(e) {
         return false;
     }
     var userArray = JSON.parse(localStorage.getItem('user'));
-    for (var i = 0; i < userArray.length; i++) {
-        if (username == userArray[i].username) {
-            if (password == userArray[i].password) {
-                closeform();
-                localStorage.setItem('userlogin', JSON.stringify(userArray[i]));
-                updateUIAfterLogin(); // Thêm hàm này để cập nhật giao diện
-                customAlert('Bạn đã đăng nhập thành công!', 'success');
-                return true;
+
+    if (userArray && userArray.length) {
+        for (var i = 0; i < userArray.length; i++) {
+            if (username == userArray[i].username) {
+                if (password == userArray[i].password) {
+                    closeform();
+                    localStorage.setItem('userlogin', JSON.stringify(userArray[i]));
+                    updateUIAfterLogin(); // Thêm hàm này để cập nhật giao diện
+                    customAlert('Bạn đã đăng nhập thành công!', 'success');
+                    return true;
+                }
             }
         }
-    }
+    } else {
+        // Xử lý khi không có dữ liệu trong localStorage
+        customAlert('Không có tài khoản nào được đăng ký!', 'error');
+        return false;
+    }    
     document.getElementById('passwordloginerror').style.display = 'block';
     document.getElementById('passwordloginerror').innerHTML = 'Sai thông tin đăng nhập!';
     return false;
